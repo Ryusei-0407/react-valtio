@@ -10,11 +10,13 @@ specifiers:
   eslint-config-airbnb: ^18.2.1
   eslint-config-prettier: 8.5.0
   eslint-plugin-import: 2.26.0
+  eslint-plugin-jsx: ^0.1.0
   eslint-plugin-jsx-a11y: 6.5.1
   eslint-plugin-prettier: 4.0.0
   eslint-plugin-react: 7.29.4
   eslint-plugin-react-hooks: 4.5.0
   eslint-plugin-simple-import-sort: 7.0.0
+  eslint-plugin-valtio: ^0.4.4
   husky: ^7.0.0
   prettier: 2.6.2
   react: 18.1.0
@@ -38,11 +40,13 @@ devDependencies:
   eslint-config-airbnb: 18.2.1_6be7065ad0c1f9180c35507fc66b8efd
   eslint-config-prettier: 8.5.0_eslint@8.14.0
   eslint-plugin-import: 2.26.0_eslint@8.14.0
+  eslint-plugin-jsx: 0.1.0
   eslint-plugin-jsx-a11y: 6.5.1_eslint@8.14.0
   eslint-plugin-prettier: 4.0.0_665eb419c9d7860ca0c224f7f6dcdace
   eslint-plugin-react: 7.29.4_eslint@8.14.0
   eslint-plugin-react-hooks: 4.5.0_eslint@8.14.0
   eslint-plugin-simple-import-sort: 7.0.0_eslint@8.14.0
+  eslint-plugin-valtio: 0.4.4
   husky: 7.0.4
   prettier: 2.6.2
   typescript: 4.6.4
@@ -1242,6 +1246,14 @@ packages:
       minimatch: 3.1.2
     dev: true
 
+  /eslint-plugin-jsx/0.1.0:
+    resolution: {integrity: sha512-278HIClJgb3Gp1b89wbva7AGS7cxQzBNgKFysy6aEB44Acso2M8ARdoaLUnN7VTWf0vnSvtwugCmc/B8MSzY5g==}
+    dependencies:
+      eslint-plugin-react: 3.4.2
+      html-tags: 1.2.0
+      svg-tags: 1.0.0
+    dev: true
+
   /eslint-plugin-prettier/4.0.0_665eb419c9d7860ca0c224f7f6dcdace:
     resolution: {integrity: sha512-98MqmCJ7vJodoQK359bqQWaxOE0CS8paAz/GgjaZLyex4TTk3g9HugoO89EqWCrFiOqn9EVvcoo7gZzONCWVwQ==}
     engines: {node: '>=6.0.0'}
@@ -1266,6 +1278,10 @@ packages:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
     dependencies:
       eslint: 8.14.0
+    dev: true
+
+  /eslint-plugin-react/3.4.2:
+    resolution: {integrity: sha1-nm74qAVPisO4e5cjbnuEnlg13Gw=}
     dev: true
 
   /eslint-plugin-react/7.29.4_eslint@8.14.0:
@@ -1297,6 +1313,11 @@ packages:
       eslint: '>=5.0.0'
     dependencies:
       eslint: 8.14.0
+    dev: true
+
+  /eslint-plugin-valtio/0.4.4:
+    resolution: {integrity: sha512-j1fl8RZ1faJLx4SQqDXw/ECr+IKn/ks6M8DBFKXCwqaY1OVGsUH+NVlGcF3or3YdPdQgPzTXLz9IW34w3rPqRA==}
+    engines: {node: '>=12.7.0'}
     dev: true
 
   /eslint-scope/5.1.1:
@@ -1618,6 +1639,11 @@ packages:
     engines: {node: '>= 0.4.0'}
     dependencies:
       function-bind: 1.1.1
+    dev: true
+
+  /html-tags/1.2.0:
+    resolution: {integrity: sha1-x43mW1Zjqll5id0rerSSANfk25g=}
+    engines: {node: '>=0.10.0'}
     dev: true
 
   /husky/7.0.4:
@@ -2289,6 +2315,10 @@ packages:
   /supports-preserve-symlinks-flag/1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
+    dev: true
+
+  /svg-tags/1.0.0:
+    resolution: {integrity: sha1-WPcc7jvVGbWdSyqEO2x95krAR2Q=}
     dev: true
 
   /text-table/0.2.0:
